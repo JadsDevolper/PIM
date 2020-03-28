@@ -1,0 +1,54 @@
+<h3>Cadastro de Doador</h3>
+
+
+<form name="Dados Pessoais" method="post">
+    <table>
+        <tr>
+            <td>Nome: </td>
+            <td><input required="true" id="nome" name="Nome" type="text" placeholder="Nome" value="" class=""></td>   
+        </tr>
+        
+    <label>Data de Nascimento:</label>
+    <input required="true" id="dtnasc" maxlength="10" name="DtNascimento" type="text" OnKeyPress="formatar('##/##/####', this)" placeholder="dd/mm/aaaa" value="" class="">
+    <br>                            
+    <label>R.G:</label>
+    <input required="true" id="rg" name="RG" type="text" placeholder="RG" value="" class="">
+    <label>Orgão Emissor:</label>
+    <input required="true" id="orgems" name="OrgEmissor" maxlength="05" type="text" placeholder="" value="" class="">
+    <label>-</label>
+    <input required="true" id="orgems1" name="OrgEmissor" maxlength="02" type="text" placeholder="" value="" class="">
+    <label>CPF:</label>
+    <input required="true" id="cpf" maxlength="14" name="CPF" type="text" OnKeyPress="formatar('###.###.###-##', this)" placeholder="CPF" value="" class="">
+    </table>
+    <label>Endereço:</label>
+    <input required="true" id="end" name="Endereco" type="text" placeholder="Endereco" value="" class="">
+    <label>CEP:</label>
+    <br>
+    <input required="true" id="cep" maxlength="10" name="CEP" type="text" OnKeyPress="formatar('##.###-###', this)" placeholder="" value="" class="">
+    <label>Bairro:</label>
+    <input required="true" id="bairro" name="Bairro" type="text" placeholder="Bairro" value="" class="">
+    <br>
+    <label>Cidade:</label>
+    <input required="true" id="cidade" name="Cidade" type="text" placeholder="Cidade" value="" class="">
+    <label>UF:</label>
+    <input required="true" maxlength="02" id="uf" name="UF" type="text" placeholder="UF" value="" class="">
+    <br>
+    <label>Telefone:</label>
+    <input required="true" maxlength="12" id="tel" name="DDD" type="text" OnKeyPress="formatar('##-####-####', this)" placeholder="(DDD)-Telefone" value="" class="">
+    <label>E-mail:</label>
+    <input required="true" id="email" name="Email" type="email" placeholder="Email" value="" class="">
+    <label>Facebook:</label>
+    <input required="true" id="uf" name="UF" type="text" placeholder="Link do facebook" value="" class="">
+    <br>
+    <br>
+    <input id="cadastroDoador" name="Cadastro" type="submit" value="Cadastrar">
+    <input id="limpar" name="Limpar" type="reset" value="Limpar">
+</form>
+
+</form>
+</div>
+
+</div><!-- FIM CONTENT -->
+</section>
+</body>
+</html>

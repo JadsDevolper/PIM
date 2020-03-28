@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Motoristas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <!-- chama cript com funções-->
+    <script src="funcoes.js"></script>
+
+<!-- Botão para voltar-->
+<input type="button" value="voltar" class="voltar" onclick="voltar()">
+
+<div id="formes"><br>
+        Cód: 
+        <input type="text" name="cod_motorista" size="2" disabled> <br><br>
+    
+    <table>                 <!-- formulário separado por tabelas  -->
+        <tr valign="top" >
+            <td>                   
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                        <form name="Dados" method="POST">
+                            <table>
+                                <tr>                                                                                          
+                                    <td>Nome: </td>
+                                    <td><input name="nome_motorista" type="text" size="30"></td>   
+                                    <td>Tel.:</td>
+                                    <td><input type="tel" name="tel_motorista" size="17" ></td>    
+                                </tr>
+                                <tr>   
+                                    <td>CPF:</td>
+                                    <td><input type="text" name="cpf_motorista" ></td>
+                                    <td>Data de Nascimento: </td>
+                                    <td><input type="date" name="datanasc_motorista"></td>                        
+                                    <td>RG:</td>
+                                    <td><input type="text" name="RG_motorista" ></td>                        
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="text" name="email_motorista" id=""></td>
+                                </tr>
+                            </table>
+                        </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+       <table>
+           <tr>
+               <td>
+                   <fieldset>
+                        <legend>Habilitação</legend>                
+                        <table>                        
+                            <tr>
+                                <td>Data:</td>
+                                <td><input type="date" name="datacnh_motorista"></td>
+                            
+                                <td>UF: </td>
+                                <td><input type="text" name="uf_motorista" size="3"></td>
+                            </tr>                            
+                            <tr>                                
+                                <td>CNH: </td>
+                                <td><input type="text" name="cnh" size="18" > Catergoria: </td>                                    
+                                <td><input type="radio" name="a" >B</td>                                
+                                <td><input type="radio" name="a/b" >A/B  </td>                                
+                                <td><input type="radio" name="c" >C</td>
+                            </tr>
+                        </table>
+                   </fieldset>
+               </td>
+           </tr>
+       </table>
+    
+<table>
+    <tr>
+        <td>
+            <fieldset>
+                <legend>Endereço</legend>
+                <table>
+                    <tr>
+                        <td>Rua:</td>
+                        <td><input type="text" name="rua_motorista">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>Bairro:</td>
+                        <td><input type="text" name="bairro_motorista" id=""></td>
+                        <td>CEP:</td>
+                        <td><input type="text" name="cep_motorista" size="15"></td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                        <td><input type="text" name="cidademotorista" id=""></td>
+                        <td>Nº: </td>
+                        <td><input type="text" name="num_motorista" size="2"></td>
+                        <td>UF:</td>
+                        <td><input type="text" name="estado_motorista" size="3"></td>                   
+                        
+                    </tr>
+                </table>
+
+            </fieldset>
+        </td>
+    </tr>
+</table>
+</table>
+<br><br><br>
+
+</div>
+<!-- botoes edição--> 
+<input type="button" value="Salvar" class="botao">   
+<input type="button" value="Editar" class="botao">
+<input type="button" value="Excluir" class="botao">        
+    
+</body>
+</html>
