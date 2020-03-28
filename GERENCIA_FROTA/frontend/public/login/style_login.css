@@ -1,0 +1,163 @@
+body {
+    background-image: url(images/1860x1050-xx4xx-2017-newsintro.jpg);
+    /*background: rgba(35, 143, 170, 0.61);*/
+    font: normal 25pt Georgia;
+    
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-position-x: center;
+    background-size: 1465px 750px;
+
+}
+
+.cabecalho {
+
+    background-color: rgb(5, 28, 44);
+    filter: brightness(50%);
+    margin-top: -5pt;
+    width: 1098pt;
+    height: 49pt;
+    margin-left: -6pt;
+    
+}
+
+header {
+    color: rgb(5, 28, 44);
+    text-align: center;
+    margin-top: -12pt;
+    
+}
+
+.container {
+    text-align: center;
+    padding: none;
+    width: none;
+    height: none;
+    margin: none;
+
+}
+
+/* Estilo  inputs*/
+input#login , #senha {
+    font-size: 12pt;
+    font: rgb(223, 113, 10);
+    contain: center;
+    width: 255px;
+    height: 27pt;   
+    align-items: center;
+    padding: 5px 12px ;
+    margin:  7px 0 0 28%;  
+    display: block;
+    border: none;    
+    box-sizing: border-box;
+   
+}
+/* Caixa do meio*/
+section {
+    background: rgb(225, 242, 243);
+    border-radius: 10px;
+    padding: 25px;
+    width: 420px;
+    margin:  15px 0 0 32%;
+    box-shadow: 4px 4px 9px rgba(0, 1, 2, 0.575);
+}
+
+/*Aparição do section*/
+section {
+    animation-name: move;
+    animation-duration: 0.9s;
+}
+
+section #login{
+    animation-name: move-input;
+    animation-duration: 1.8s;
+    animation-delay: 0.05s;
+    animation-fill-mode: backwards;
+}
+
+/*Mover do input*/
+@keyframes move-input {
+    from {
+        opacity: 0;
+        transform:scale(0.5);
+        transform: translateX(-35%); 
+    } to {
+        opacity: 1;
+        transform:scale(1);
+        transform: translateX(0);
+    }
+}
+/* Mover da caixa do meio*/
+@keyframes move {
+    from {
+        opacity: 0;
+        transform:scale(0.5); 
+    } to {
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+/*Icones*/
+
+.container img {
+    filter: hue-rotate(164deg);
+    margin-bottom: -35pt;
+    margin-left: -200pt;
+    width:34px;
+    height:29px;
+    padding: 2 2 20;    
+}
+
+/*Estilo do botão entrar*/
+.entrar {   
+    
+    /*margin-left: 38%;*/
+    width: 32%;
+    height: 50px;
+    text-align: center;
+    font: normal 27pt times;
+    color: rgb(225, 242, 243);
+    border: none;
+    border-radius: 5px;
+    background:rgb(10, 45, 68);
+    transition: 0.7s ease; /*suave quando mouse sair*/
+
+}
+
+.entrar:hover {
+    width: 190px;
+    height: 90px;    
+    transition: 0.3s ease-in; /*suave quando mouse entrar*/
+    font: normal 34pt times;
+    color: rgb(243, 225, 233);
+    border: none;
+    border-radius: 5px;
+    background:rgba(30, 101, 148, 0.74);
+
+}
+
+/* sumir a caixa do meio ao clicar*/
+.form-hide {
+    animation: down 634ms forwards;
+    
+}
+
+@keyframes down {
+    from {        
+        transform: scale(1);
+    } 
+    to {
+        transform: scale(0.001);
+        
+    }
+}
+
+
+footer {
+    text-align: end;
+    font-size: 16px;
+    color: rgb(217, 231, 248);   
+    text-align: center;
+    font-style: italic;
+    margin-top: 50pt;
+}
