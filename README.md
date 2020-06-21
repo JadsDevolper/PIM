@@ -1,9 +1,9 @@
 # PIM - Projeto Integrado Mutidisciplinar
 Gerencia frota
 
-Progeto de  faculdade, foi proposto criação de sistema desktop web e mobile
+Progeto de  faculdade, foi proposto criação de sistema para desktop, web e mobile
 
-* Funcionalidades 
+⚙ Funcionalidades 
 
  Este sistema funciona com cadastro de clientes com dados de endereço e contato
 a fim de agendar visitas técnicas, as visitas técncias são parassadas para
